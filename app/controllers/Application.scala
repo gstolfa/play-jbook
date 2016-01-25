@@ -10,7 +10,7 @@ class Application extends Controller {
 	*****************************/
   def index = Action {
     //Ok(views.html.index("Gianfranco Stolfa"))
-	Ok(views.html.listContainer(3, Seq("uno","due", "ciccio")))    
+	Ok(views.html.listContainer(2, Seq("uno","due", "tre")))    
   }
 
 
