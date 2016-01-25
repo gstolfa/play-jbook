@@ -1,0 +1,19 @@
+@(level:Int, items: Seq[String])
+
+
+<h@level>Here we go! @level  </h@level>
+
+
+
+<ul id="list@level" style="margin-left: @{5 * level}%">
+	
+	
+	@items.map{ item => 
+
+		<li>@item</li>
+
+	}
+
+
+
+</ul>
