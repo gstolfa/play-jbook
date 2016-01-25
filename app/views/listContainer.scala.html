@@ -1,16 +1,15 @@
-@(level:Int, items: Seq[String])
+@(header:Html)(chat: Chat)(footer:Html)
 
+@import models.Chat
 
-<h@level>Here we go! @level  </h@level>
+<ul style="margin-left: @{5 * chat.occurrence}%">
+	@header
 
+	@chat.items.map{ item => 
 
-
-<ul id="list@level" style="margin-left: @{5 * level}%">
-		
-	@items.map{ item => 
-
-		<li>@item</li>
-
+		@listItem(item)
+	
 	}
-
+	
+	@footer
 </ul>

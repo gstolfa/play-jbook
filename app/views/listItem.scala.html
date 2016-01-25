@@ -1,0 +1,16 @@
+@(item:Item)
+
+<style type="text/css">
+	
+	li.item span{
+		width: 100px;
+		display: inline-block;
+	}
+
+</style>
+
+<li class="item">
+	<span>@item.user</span>
+	<span>[@item.timestamp]</span> 
+	<span>@item.message</span>
+</li>
